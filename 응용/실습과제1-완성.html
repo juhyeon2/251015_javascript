@@ -5,9 +5,9 @@
 <script>
     function calAge(year, month, day) {
         let age;
-        // if (_____________________________) 
+        if (month < now_month) 
             age = now_year - year;
-        // else if (____________________________) {
+        else if (month == now_month) {
             if (day <= now_day) 
                 age = now_year - year;
             else
@@ -16,7 +16,7 @@
         else  
             age = now_year - year - 1 
 
-        // return __________________________;
+        return age;
     }
 
     let now_year = 2023; // 현재 년
@@ -32,4 +32,5 @@
     document.write("- 나이: " + calAge(birth_year, birth_month, birth_day));
 </script>
 </body>
+
 </html> 
