@@ -18,12 +18,9 @@
     function getSum() {      
         const x = document.forms["form1"];
         let sum = 0;
-		sum += subj1;
-		sum += subj2;
-		sum += subj3;
-		sum += subj4;
-		sum += subj5;
-
+		for(let i=0;i<x.length;i++)
+			sum += x.elements[i].value;
+		
 		document.getElementById("sum").innerHTML = sum;
 
     }
@@ -31,11 +28,8 @@
         const x = document.forms["form1"];
         let sum = 0;
 		let avg;
-		sum += subj1;
-		sum += subj2;
-		sum += subj3;
-		sum += subj4;
-		sum += subj5;		
+		for(let i=0;i<x.length;i++)
+			sum += x.elements[i].value;
 		avg = sum/5;
 
         document.getElementById("avg").innerHTML = avg;
@@ -44,3 +38,4 @@
 </body>
 
 </html> 
+
