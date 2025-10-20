@@ -19,7 +19,7 @@
         const x = document.forms["form1"];
         let sum = 0;
 		for(let i=0;i<x.length;i++)
-			sum += x.elements[i].value;
+			sum += parseInt(x.elements[i].value);
 		
 		document.getElementById("sum").innerHTML = sum;
 
@@ -29,7 +29,7 @@
         let sum = 0;
 		let avg;
 		for(let i=0;i<x.length;i++)
-			sum += x.elements[i].value;
+			sum += parseInt(x.elements[i].value);
 		avg = sum/5;
 
         document.getElementById("avg").innerHTML = avg;
@@ -38,4 +38,5 @@
 </body>
 
 </html> 
+
 
